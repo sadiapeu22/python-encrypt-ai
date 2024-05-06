@@ -11,7 +11,7 @@ def caesar_encrypt(text, shift):
         elif char .isupper():
             ascii_code = ord(char)
             new_ascii_code = ascii_code + shift
-            if new_ascii_code > ord('Z')
+            if new_ascii_code > ord('Z'):
                 new_ascii_code = new_ascii_code -26
             new_char = chr(new_ascii_code)
             result = result + new_char
@@ -28,3 +28,7 @@ shift = int(input("Enter your shift value: "))
 
 encrypted_text = caesar_encrypt(text, shift)
 decrypted_text = caesar_decrypt(text, -shift)
+
+print("Orginal:", text)
+print("Encrypted:", encrypted_text)
+print("Decrypted:", decrypted_text)
