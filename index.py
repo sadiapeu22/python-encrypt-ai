@@ -23,3 +23,8 @@ def caesar_encrypt(text, shift):
 def caesar_decrypt(text, shift):
     return caesar_encrypt(text, -shift)
 
+text = input("Enter your text: ")
+shift = int(input("Enter your shift value: "))
+
+encrypted_text = caesar_encrypt(text, shift)
+decrypted_text = caesar_decrypt(text, -shift)
